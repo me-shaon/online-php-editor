@@ -25,6 +25,17 @@ That's literally it! 🚀
 - [Laravel](https://laravel.com/)
 - [Monaco editor](https://github.com/microsoft/monaco-editor)
 
+### How to run
+This project has already `Laravel sail` installed as a dependency. So, you can easily use Docker to boot it up.
+
+You can run the following commands:
+
+- `composer install`
+- `./vendor/bin/sail up`
+- `npm run dev`
+
+By default, Laravel sail runs the project in the `80` port. So, you can access it via `http://localhost`. But you can add a separate port in `APP_PORT` in `.env` file.
+
 ### Inspiration
 
 The UI and implementation of this project is largely inspired from an excellent project called [PHPAST](https://phpast.com/) by [Ryan Chandler](https://twitter.com/ryangjchandler).
