@@ -31,22 +31,19 @@ async function generateOutput(code) {
     const errorMessage = document.getElementById('error-message');
 
     errorContainer.style.display = "none";
+    output.style.display = "none";
     loader.style.display = 'flex';
 
     axios.post('/api/generate', { code })
         .then(response => response.data)
-        .then(({ ast, error = undefined }) => {
-            output.innerHTML = "";
-
+        .then(({ result, error = undefined }) => {
             if (error !== undefined) {
                 errorMessage.innerText = error;
                 errorContainer.style.display = "block";
-                loader.style.display = "none";
-                return;
+            } else {
+                output.innerText = result;
+                output.style.display = "block";
             }
-
-            output.innerHTML = '';
-            output.appendChild('Done');
 
             loader.style.display = "none";
         });
