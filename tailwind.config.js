@@ -12,6 +12,9 @@ module.exports = {
                     'Fira Code',
                     ...defaults.fontFamily.mono,
                 ]
+            },
+            colors: {
+                'editor': '#1e1e1e'
             }
         },
     },
