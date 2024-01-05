@@ -4,7 +4,7 @@
 
 ### Why?
 Sometimes I use a random online PHP interpreter to execute a simple PHP block of code quickly.
-From time to time, I was wondering, "Is it really complicated to implement such an online platform? How does it work?"
+Occasionally, I wondered, "Is it really complicated to implement such an online platform? How does it work?" 🤔
 
 From that question, I tried to figure it out by implementing this fun side project. 
 
